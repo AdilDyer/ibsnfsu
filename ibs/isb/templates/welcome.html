@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="mt-3 text-center container">
+    <h2>Welcome to the Deepfake Detection Platform</h2>
+    <p class="lead">This platform offers tools to detect AI-generated content. You can use our tools to detect AI-generated images, AI-generated text, or take a quiz to learn more about deepfakes.</p>
+    <div class="mt-4">
+        <a href="/image_detection" class="btn btn-info btn-lg mx-2 mb-2">AI Image Detection</a>
+        <a href="/text-detection" class="btn btn-info btn-lg mx-2 mb-2">AI Text Detection</a>
+        <a href="/quiz" class="btn btn-info btn-lg mx-2 mb-2">Deepfake Quiz</a>
+    </div>
+</div>
+{% endblock %}

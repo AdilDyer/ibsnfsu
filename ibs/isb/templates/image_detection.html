@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <div class="card-header text-center bg-dark text-white">
+            <h2 class="text-white">AI Image Detection</h2>
+        </div>
+        <div class="card-body">
+            <p class="lead text-center">Upload an image you want to analyze and click the detect button to determine if it is a Deepfake or a real image.</p>
+            <form action="/image_detection" method="post" enctype="multipart/form-data" class="mt-4">
+                <div class="form-group text-left">
+                    <label for="image"><h5>Upload Image:</h5></label>
+                    <input type="file" class="form-control-file" id="image" name="image" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Detect</button>
+                </div>
+            </form>
+        </div>
+{% endblock %}
